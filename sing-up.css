@@ -1,0 +1,137 @@
+/* Apply styles to the body or a container element */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #658feb;
+ 
+
+}
+.for-bg{
+    width: 100%;
+    position: absolute;
+    height: 100px;
+}
+.wrap-container{
+    position:relative;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Style form elements */
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.btn-primary {
+    width: 100%;
+  
+    margin: 5px 50px 5px 2px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Style the navbar */
+.navbar {
+    background-color: #343434;
+}
+
+.navbar-brand img {
+    max-height: 60px;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.navbar-nav a {
+    color: #fff;
+}
+
+/* Style the signup button in the navbar */
+.navbar .btn-primary {
+    margin-left: 10px;
+}
+
+/* Add more styles as needed */
+
+/* Reset styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Shared Navbar Styles */
+.navbar {
+  background-color: #343434;
+}
+
+.navbar-brand img {
+  max-height: 60px;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+
+.navbar-nav a {
+  color: #fff;
+}
+
+/* Apply styles to the body or a container element */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Rest of your existing styles... */
+
+/* Signup button style in navbar */
+.navbar .btn-primary {
+  margin-left: 10px;
+}
+.btn2{
+    height: 45px;
+}
+
+/* Add more styles as needed */

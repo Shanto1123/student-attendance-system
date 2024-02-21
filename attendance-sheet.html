@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Student Attendance List</title>
+  </head>
+  <body>
+    <!-- Navbar (You can include the same navbar used in other pages) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid" style="background-color: rgb(12, 2, 2)">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.png" alt="IST" width="90px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+            <h1 style="color: white"><b>Class Attendance Management </b></h1>
+          </ul> -->
+          <!-- <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form> -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="btn btn-primary ms-2">LOG OUT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <!-- Container for displaying student attendance list -->
+      <h1 class="bg-primary text-white text-center">Today's Attendance List</h1>
+      <p
+        id="currentDate"
+        class="p-3 mb-2 bg-primary text-white text-center fw-bold"
+      ></p>
+
+      <div id="attendanceList">
+        <!-- The list of students will be displayed here -->
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Contact Information</h3>
+            <p>Email: santohossen341@gmail.com</p>
+            <p>Phone:01722341973</p>
+          </div>
+          <div class="col-md-6">
+            <h3>DEVELOPER BIO</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="https://650c17486be4a40f335c615d--hilarious-mochi-7ee53c.netlify.app/"
+                  class="ft"
+                  >My Portfolio Link</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/14WRDbWSUF4RO_HMDCUYTmTfJxN10wIjr/view?usp=sharing"
+                  class="ft"
+                  >MY CV</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12 text-center">
+            &copy; 2023 ABDUR RAHMAN. All Rights Reserved.
+            <a
+              href="https://650c17486be4a40f335c615d--hilarious-mochi-7ee53c.netlify.app/"
+              class="ft"
+              >ABDUR RAHMAN</a
+            >
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12 text-center">
+            <a href="https://www.facebook.com/shak.santo.7" class="ft"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="#" class="ft"><i class="bi bi-twitter"></i></a>
+            <a
+              href="https://www.linkedin.com/in/abdur-rahman-8635b9290/"
+              class="ft"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a href="https://github.com/Shanto1123" class="ft"
+              ><i class="bi bi-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap and JavaScript Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="attendance-sheet.js"></script>
+  </body>
+</html>

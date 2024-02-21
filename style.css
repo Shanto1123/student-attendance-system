@@ -1,0 +1,375 @@
+/* Default styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 48px;
+  text-align: center;
+  padding: 20px 0;
+  margin: auto;
+}
+
+#school {
+  font-size: 48px;
+  color: rgb(108, 12, 12);
+  text-align: center;
+  padding: 20px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto; /* Let content dictate the height */
+  grid-gap: 10px;
+  margin: 0 auto;
+}
+
+.im {
+  width: 5px;
+  height: 5px;
+  text-align: left;
+}
+
+.image {
+  width: 100%;
+  height: auto; /* Maintain image aspect ratio */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.right {
+  background-color: rgb(189, 211, 218);
+  border-radius: 5px;
+  background-image: url(./img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 500px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+#form input {
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #0aeb19;
+  color: white;
+  width: 220px;
+}
+
+#submit:hover {
+  background-color: rgb(160, 43, 43);
+  color: black;
+  border-radius: 5px;
+  color: aliceblue;
+  font-family: fantasy;
+}
+
+.login_head {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 38px;
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+/* footer sytle */
+.ft {
+  text-align: center;
+  color: red;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.head2nd{
+  font-size: 30px;
+}
+.text-primary{
+  text-decoration: none;
+  color: white;
+}
+
+
+table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: center;
+}
+
+tr > th {
+  background-color: teal;
+  color: white;
+}
+
+.studentData {
+  width: 100%;
+  background-color: green;
+  padding: 15px;
+}
+#form1 {
+  margin: auto;
+  width: 80%;
+}
+#form1 input {
+  padding: 10px;
+  margin-right: 15px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+#form1 input:focus {
+  outline: none;
+}
+
+.td6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.td6 > button {
+  margin-right: 10px;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.td6 > button:nth-child(1) {
+  background-color: green;
+}
+.td6 > button:nth-child(2) {
+  background-color: red;
+}
+
+#absent {
+  background-color: red;
+}
+
+.atn2 {
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+.navbar-toggler-icon{
+ color: #0aeb19;
+  margin: 3px;
+}
+.carousel-inner img{
+  height: 500px;
+}
+.navbar{
+  background-color: dimgray;
+}
+
+
+
+/* Add media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+  /* Styles for screens with a maximum width of 768px (e.g., mobile phones) */
+  .login {
+    grid-template-columns: 1.5fr; /* Single column layout for mobile */
+  }
+
+  .right {
+    background-position: 50% 50%; /* Adjust background position for better visibility */
+  }
+
+  .image img {
+    border-radius: 0; /* Remove border radius for mobile */
+  }
+
+  .login_head {
+    font-size: 28px; /* Reduce font size for mobile */
+  }
+
+  #form {
+    margin-top: 5%; /* Adjust margin for mobile */
+  }
+  .carousel-inner img{
+    height: 300px;
+   border:0px;
+   border-radius: 10px;
+  }
+  .form-control{
+    width: 100%; /* Full width for search input */
+    margin-right: 10px;
+  }
+
+  .navbar-light .navbar-toggler {
+    color: rgba(228, 10, 10, 0.55);
+    border-color: rgba(14, 215, 58, 0.1);
+    background: #ddd;
+}
+.heder-title{
+  margin-left:-9rem !important ;
+  text-align: center;
+
+
+}
+.nav-item .navbar-nav{
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+ 
+}
+
+
+}
+
+
+#footer2{
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+}
+
+/* Media query for laptops and desktops */
+@media screen and (min-width: 1024px) {
+  .login {
+    grid-template-columns: 1fr 1fr; /* Maintain the two-column layout */
+  }
+
+  .image {
+    height: 600px; /* Adjust image height for larger screens */
+  }
+
+  .right {
+    background-size: cover; /* Use cover for background image on larger screens */
+    background-position: center center;
+  }
+
+  .image img {
+    
+    border-radius: 10px;
+  }
+
+  .login_head {
+    font-size: 48px; /* Increase font size for larger screens */
+  }
+
+  #form {
+    margin-top: 10%; /* Adjust margin for larger screens */
+  }
+  
+.navbar-brand img {
+  max-width: 100%; /* Ensure the logo scales down for smaller screens */
+}
+
+/* Increase the font size of the heading for better readability on mobile */
+
+.navbar-nav-scroll h1 {
+  font-size: 24px;
+  margin: 10px 0; /* Add some margin for spacing */
+}
+
+/* Center align the heading and reduce padding for smaller screens */
+
+.navbar-nav-scroll {
+  text-align: center;
+  padding: 5px;
+}
+
+/* Adjust the form styles for mobile */
+
+.form-control {
+  width: 100%; /* Full width for search input */
+  margin-right: 10px; /* Add margin between input and button */
+}
+
+/* Increase padding and font size for the search button on mobile */
+
+.btn-outline-success {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* Container styles for mobile */
+
+.container {
+  padding: 10px; /* Add some padding for better spacing */
+}
+
+/* Center the date and attendance list on mobile */
+
+#currentDate,
+#attendanceList {
+  text-align: center;
+}
+
+/* Style the attendance list for mobile */
+
+.bg-primary.text-white {
+  padding: 10px; /* Add padding for spacing */
+  margin-bottom: 10px; /* Add margin between the heading and list */
+}
+
+/* Increase font size for better readability on mobile */
+
+.bg-primary.text-white h1 {
+  font-size: 24px;
+}
+
+/* Style the contact information and bio links for better mobile readability */
+
+.col-md-6 h3,
+.ft{
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px 0; /* Add margin for spacing */
+}
+
+/* Center the copyright text on mobile */
+
+.text-center {
+  text-align: center;
+}
+
+  /* Add more styles as needed for laptop/desktop screens */
+}

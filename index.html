@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    /><!-- Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- local CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Student Manegement</title>
+  </head>
+
+  <body>
+    <!-- navbar.html -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid" style="background-color: rgb(12, 2, 2)">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.png" alt="IST" width="90px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+            <h1 style="color: white"><b>Class Attendance Management </b></h1>
+          </ul> -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="sing-up.html" class="btn btn-primary ms-2">SING UP</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--     
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="IST" width="90px" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="carousel-control-prev-icon"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <h1 style="color: white"><b>Class Attendence Manegement </b></h1>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="sing-up.html" class="btn btn-primary ms-2">Sign Up</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+   -->
+    <h1
+      class="heder-title"
+      style="
+        color: white;
+        background-color: rgb(16, 216, 29);
+        text-align: center;
+      "
+    >
+      <b>Class Attendance Management </b>
+    </h1>
+
+    <div class="login">
+      <!-- image slider -->
+      <div class="image">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/lab.jpg"
+                class="d-block w-100"
+                height="120px"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/sd2.jpg"
+                class="d-block w-100"
+                height="120px"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img\ist.jpg"
+                class="d-block w-100"
+                height="120px"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- login right side -->
+      <div class="right">
+        <h4 class="login_head head2nd" style="font-size: 30px">
+          Teacher login
+        </h4>
+        <form action="" id="form">
+          <input type="text" id="name" placeholder="username" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+
+          <input
+            type="submit"
+            class="btn btn-warning"
+            id="submit"
+            value="Login"
+          />
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Contact Information</h3>
+            <p>Email: santohossen341@gmail.com</p>
+            <p>Phone:01722341973</p>
+          </div>
+          <div class="col-md-6">
+            <h3>DEVELOPER BIO</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="https://650c17486be4a40f335c615d--hilarious-mochi-7ee53c.netlify.app/"
+                  class="ft"
+                  >My Portfolio Link</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/14WRDbWSUF4RO_HMDCUYTmTfJxN10wIjr/view?usp=sharing"
+                  class="ft"
+                  >MY CV</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12 text-center">
+            &copy; 2023 ABDUR RAHMAN. All Rights Reserved.
+            <a
+              href="https://650c17486be4a40f335c615d--hilarious-mochi-7ee53c.netlify.app/"
+              class="ft"
+              >ABDUR RAHMAN</a
+            >
+          </div>
+          <!-- Social media icons -->
+          <div class="row mt-3">
+            <div class="col-md-12 text-center">
+              
+              <a href="https://www.facebook.com/shak.santo.7" class="ft"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="ft"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/abdur-rahman-8635b9290/" class="ft"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/Shanto1123" class="ft"><i class="bi bi-github"></i></a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
